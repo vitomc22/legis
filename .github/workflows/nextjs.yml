@@ -1,37 +1,19 @@
-# Sample workflow for building and deploying a Next.js site to GitHub Pages
-#
-# To get started with Next.js see: https://nextjs.org/docs/getting-started
-#
-name: Deploy OLD Next.js site to Pages
+name: Deploy NestJS Application
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["live-demo"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches:
+      - main  # Executa a ação apenas quando há um push na branch "main"
 
 jobs:
-  # Build job
-  build:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3      
-      name: Setup Node.js
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'  # Use a versão do Node.js compatível com a sua aplicação
@@ -40,8 +22,23 @@ jobs:
         run: npm install
 
       - name: Build application
-        run: npm run build 
-  # Deployment job
+        run: npm run build  # Certifique-se de que o comando 'build' está configurado no seu package.json
+
+      - name: Deploy via SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+          SERVER_HOST: ${{ secrets.SERVER_HOST }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST "mkdir -p $DEPLOY_PATH"
+          scp -r ./dist/* $SERVER_USER@$SERVER_HOST:$DEPLOY_PATH
+          ssh $SERVER_USER@$SERVER_HOST "cd $DEPLOY_PATH && npm install --production && pm2 restart app"
+
+      # Deployment job
   deploy:
     environment:
       name: github-pages
