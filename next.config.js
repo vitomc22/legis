@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   distDir: 'dist',
+  output: "export",  // <=== enables static exports
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
