@@ -29,7 +29,7 @@ function Hero() {
                   size="lg"
                   color="white"
                   className="flex justify-center items-center gap-3" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
-                <Image
+                <img
                   width={256}
                   height={256}
                   src="/logos/legis_logo.webp"
@@ -45,7 +45,7 @@ function Hero() {
                   size="lg"
                   color="white"
                   className="flex justify-center items-center gap-3"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
-                <Image
+                <img
                   width={256}
                   height={256}
                   src="/logos/legis_logo.webp"
@@ -57,7 +57,7 @@ function Hero() {
               </a>
             </div>
           </div>
-          <Image
+          <img
             width={470}
             height={577}
             src="/image/iphones.png"

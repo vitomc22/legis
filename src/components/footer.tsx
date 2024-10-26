@@ -45,7 +45,7 @@ export function Footer() {
               <Button
                 color="white"
                 className="flex items-center justify-center"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
-                <Image
+                <img
                   width={256}
                   height={256}
                   src="/logos/logo-apple.png"
@@ -57,7 +57,7 @@ export function Footer() {
               <Button
                 color="white"
                 className="flex items-center justify-center"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
-                <Image
+                <img
                   width={256}
                   height={256}
                   src="/logos/logo-google.png"
