@@ -6,12 +6,6 @@ const nextConfig = {
   reactStrictMode: true,
   images: {        
       unoptimized: true, // <=== disable image optimization
-      localPatterns: [
-        {
-          pathname: ' legis/images/**',
-          search: '',
-        },
-      ],
   },
 };
 

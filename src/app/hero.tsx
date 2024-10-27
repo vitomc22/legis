@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
+import iphones from '../../public/image/iphones.png';
 
 
 function Hero() {
@@ -60,7 +61,7 @@ function Hero() {
           <Image
             width={470}
             height={577}
-            src="legis/image/iphones.png"
+            src={iphones}
             alt="team work"
             className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
           />
