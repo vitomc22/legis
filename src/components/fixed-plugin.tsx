@@ -9,12 +9,12 @@ export function FixedPlugin() {
         color="white"
         size="sm"
         className="!fixed bottom-4 right-4 flex gap-1 pl-2 items-center border border-blue-gray-50" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
-        <img
+        <Image
           width={128}
           height={128}
           className="w-5 h-5"
           alt="Legis Flash Cards"
-          src="/logos/legis_logo.webp"
+          src="legis/logos/legis_logo.webp"
         />{" "}
         Acesse aqui!
       </Button>

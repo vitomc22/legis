@@ -32,7 +32,7 @@ function Hero() {
                 <Image
                   width={256}
                   height={256}
-                  src="/logos/legis_logo.webp"
+                  src="legis/logos/legis_logo.webp"
                   alt="metamask"
                   className="w-6 h-6"
                 />
@@ -45,10 +45,10 @@ function Hero() {
                   size="lg"
                   color="white"
                   className="flex justify-center items-center gap-3"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
-                <img
+                <Image
                   width={256}
                   height={256}
-                  src="/logos/legis_logo.webp"
+                  src="legis/logos/legis_logo.webp"
                   alt="metamask"
                   className="w-6 h-6"
                 />
@@ -57,10 +57,10 @@ function Hero() {
               </a>
             </div>
           </div>
-          <img
+          <Image
             width={470}
             height={577}
-            src="/image/iphones.png"
+            src="legis/image/iphones.png"
             alt="team work"
             className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
           />

@@ -28,10 +28,10 @@ export function MobileConvenience() {
   return (
     <section className="py-20 px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
-        <img
+        <Image
           width={1920}
           height={1024}
-          src="/image/iphone.png"
+          src="legis/image/iphone.png"
           className="col-span-1 h-10/12 w-12/12 object-cover mx-auto"
           alt="iphone-photo"
         />

@@ -45,10 +45,10 @@ export function Footer() {
               <Button
                 color="white"
                 className="flex items-center justify-center"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
-                <img
+                <Image
                   width={256}
                   height={256}
-                  src="/logos/logo-apple.png"
+                  src="legis/logos/logo-apple.png"
                   className="-mt-0.5 mr-2 h-6 w-6"
                   alt="ios"
                 />
@@ -57,10 +57,10 @@ export function Footer() {
               <Button
                 color="white"
                 className="flex items-center justify-center"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
-                <img
+                <Image
                   width={256}
                   height={256}
-                  src="/logos/logo-google.png"
+                  src="legislogos/logo-google.png"
                   className="-mt-0.5 mr-2 h-6 w-6"
                   alt="ios"
                 />
