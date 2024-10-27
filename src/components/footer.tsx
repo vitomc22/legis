@@ -60,7 +60,7 @@ export function Footer() {
                 <Image
                   width={256}
                   height={256}
-                  src="legislogos/logo-google.png"
+                  src="legis/logos/logo-google.png"
                   className="-mt-0.5 mr-2 h-6 w-6"
                   alt="ios"
                 />
