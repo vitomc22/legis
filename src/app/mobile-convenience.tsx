@@ -47,7 +47,7 @@ export function MobileConvenience() {
             Acesse o material de aprendizado onde for.
           </Typography>
 
-          <div className="col-span-2 grid gap-5 grid-cols-2 ">
+          <div className="col-span-2 grid gap-10 grid-cols-1 sm:grid-cols-2">
             {OPTIONS.map(({ title, description }) => (
               <InfoCard key={title} title={title}>
                 {description}
