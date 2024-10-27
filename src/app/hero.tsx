@@ -32,7 +32,7 @@ function Hero() {
                 <img
                   width={256}
                   height={256}
-                  src="/logos/legis_logo.webp"
+                  src="dist/image/iphones.png"
                   alt="metamask"
                   className="w-6 h-6"
                 />
