@@ -29,10 +29,10 @@ function Hero() {
                   size="lg"
                   color="white"
                   className="flex justify-center items-center gap-3" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
-                <img
+                <Image
                   width={256}
                   height={256}
-                  src="dist/image/iphones.png"
+                  src="/logos/legis_logo.webp"
                   alt="metamask"
                   className="w-6 h-6"
                 />
