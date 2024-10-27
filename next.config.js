@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: "/legis",
-  distDir: 'dist',
+  distDir: '/legis/dist',
   output: "export",  // <=== enables static exports
   reactStrictMode: true,
   images: {        
