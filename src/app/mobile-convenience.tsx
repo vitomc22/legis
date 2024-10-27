@@ -3,7 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import InfoCard from "@/components/info-card";
-import { Typography, Card, CardBody } from "@material-tailwind/react";
+import iphone from '../../public/image/iphone.png'
+import { Typography} from "@material-tailwind/react";
 
 const OPTIONS = [
   {
@@ -31,7 +32,7 @@ export function MobileConvenience() {
         <Image
           width={1920}
           height={1024}
-          src="legis/image/iphone.png"
+          src={iphone}
           className="col-span-1 h-10/12 w-12/12 object-cover mx-auto"
           alt="iphone-photo"
         />

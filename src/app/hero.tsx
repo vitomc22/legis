@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
 import iphones from '../../public/image/iphones.png';
+import legis_logo from '../../public/logos/legis_logo.webp';
 
 
 function Hero() {
@@ -33,7 +34,7 @@ function Hero() {
                 <Image
                   width={256}
                   height={256}
-                  src="legis/logos/legis_logo.webp"
+                  src={legis_logo}
                   alt="metamask"
                   className="w-6 h-6"
                 />
@@ -49,7 +50,7 @@ function Hero() {
                 <Image
                   width={256}
                   height={256}
-                  src="legis/logos/legis_logo.webp"
+                  src={legis_logo}
                   alt="metamask"
                   className="w-6 h-6"
                 />

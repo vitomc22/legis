@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@material-tailwind/react";
+import legis_logo from "../public/logos/legis_logo.webp";
 
 export function FixedPlugin() {
   return (
@@ -14,7 +15,7 @@ export function FixedPlugin() {
           height={128}
           className="w-5 h-5"
           alt="Legis Flash Cards"
-          src="legis/logos/legis_logo.webp"
+          src={legis_logo}
         />{" "}
         Acesse aqui!
       </Button>
