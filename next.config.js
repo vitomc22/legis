@@ -6,7 +6,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {        
       unoptimized: true, // <=== disable image optimization
-      path: `${basePath}/dist`, // <=== change the default image path
+      path: `/legis/dist`, // <=== change the default image path
   },
 };
 
