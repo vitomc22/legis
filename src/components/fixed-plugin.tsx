@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@material-tailwind/react";
-import legis_logo from "../public/logos/legis_logo.webp";
+import legis_logo from '../../public/logos/legis_logo.webp'
 
 export function FixedPlugin() {
   return (
