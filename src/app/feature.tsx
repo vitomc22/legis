@@ -15,27 +15,27 @@ import FeatureCard from "../components/feature-card";
 const FEATURES = [
   {
     icon: CursorArrowRaysIcon,
-    title: "Expert Instructors",
+    title: "Técnica de aprendizado",
     children:
-      "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
+      "O programa utiliza da técnica de aprendizado chamada repetição espaçada para determinar, através de um algoritmo, o momento de revisão dos cartões de memorização utilizados pelo usuário.",
   },
   {
     icon: HeartIcon,
-    title: "Interactive Learning",
+    title: "Aprendizagem interativa",
     children:
-      "Engage with interactive quizzes, hands-on exercises, and discussion forums to reinforce your understanding and connect.",
+      "O aprendizado de cartão de memória, também conhecido como flashcards, é uma técnica de estudo que consiste em fazer revisões periódicas de conteúdos através de perguntas e respostas.",
   },
   {
     icon: LockClosedIcon,
-    title: "Achievement Unlocked",
+    title: "Conquista Desbloqueada",
     children:
-      "Earn certificates and badges as you complete courses, showcasing your newfound skills to the world.",
+      "Melhore seu aprendizado de uma forma inteligente e eficaz, com o uso de cartões de memorização.",
   },
   {
     icon: LightBulbIcon,
-    title: "Personalized Progress Tracking",
+    title: "Progresso personalizado",
     children:
-      "Stay on top of your learning journey with progress tracking and personalized recommendations to keep you motivated.",
+      "Ao revisar o cartão, o usuário avalia quão bem consegue lembrar-se do conteúdo previsto e, tal, avaliação será utilizada para definir a próxima data de revisão.",
   },
 ];
 

@@ -33,7 +33,7 @@ export function MobileConvenience() {
           width={1920}
           height={1024}
           src={iphone}
-          className="col-span-1 h-10/12 w-12/12 object-cover mx-auto"
+          className="col-span-1 h-10/12 w-12/12 object-cover mx-auto hover:-translate-y-1 hover:scale-110"
           alt="iphone-photo"
         />
         <div className="col-span-1 mx-auto max-w-lg px-4 lg:px-0">

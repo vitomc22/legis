@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
 import iphones from '../../public/image/iphones.png';
-import legis_logo from '../../public/logos/legis_logo.webp';
+import legis_logo from '../../public/logos/legis_logo.png';
 
 
 function Hero() {
@@ -11,7 +11,12 @@ function Hero() {
     <div className="relative min-h-screen w-full">
       <header className="grid !min-h-[49rem] bg-gray-900 px-8">
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2">
-          <div className="col-span-1">
+          <div className="-mt-10 -translate-y-9 col-span-1">
+          <Image
+              width={200}
+              height={200}
+              src={legis_logo}
+              className="sticky left-20 hover:-translate-y-1 hover:scale-110" alt={""}></Image>
             <Typography variant="h1" color="white" className="mb-4"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Domine Legislação para Concurso com 
             Flashcards
@@ -30,29 +35,28 @@ function Hero() {
               <Button
                   size="lg"
                   color="white"
-                  className="flex justify-center items-center gap-3" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
+                  className=" hover:animate-bounce flex justify-center items-center gap-3" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
                 <Image
                   width={256}
                   height={256}
                   src={legis_logo}
                   alt="metamask"
-                  className="w-6 h-6"
+                  className="w-8 h-8"
                 />
                 Acessar o Catálogo
               </Button> 
               </a>
               <a href="https://legisflashcards.com.br">
-              <Button
-                
+              <Button                
                   size="lg"
                   color="white"
-                  className="flex justify-center items-center gap-3"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
+                  className=" hover:animate-bounce flex justify-center items-center gap-3"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
                 <Image
                   width={256}
                   height={256}
                   src={legis_logo}
                   alt="metamask"
-                  className="w-6 h-6"
+                  className="w-8 h-8"
                 />
                 Vade Mecum de Flashcards
               </Button>
@@ -64,7 +68,7 @@ function Hero() {
             height={577}
             src={iphones}
             alt="team work"
-            className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0"
+            className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0 hover:-translate-y-1 hover:scale-110"
           />
         </div>
       </header>
