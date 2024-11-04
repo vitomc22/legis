@@ -9,7 +9,7 @@ import car3 from "../../public/image/car3.jpeg";
 export function CarouselDefault() {
   return (
     <div className="p-8">
-      <div className="w-full container px-5 overflow-hidden rounded-xl relative mx-auto mt-20 max-w-6xl ">        
+      <div className="w-full container px-5 overflow-hidden rounded-xl relative mx-auto mt-20 max-w-4xl ">        
       <Carousel
           className="rounded-xl"
           prevArrow={({ handlePrev }) => (

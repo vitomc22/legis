@@ -76,18 +76,6 @@ export function Navbar() {
           <IconButton
             variant="text"
             color={isScrolling ? "gray" : "white"}
-            size="sm" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
-            <i className="fa-brands fa-twitter text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
-            size="sm"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
-            <i className="fa-brands fa-facebook text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? "gray" : "white"}
             size="sm"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
